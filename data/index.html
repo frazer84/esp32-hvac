@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>HVAC</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>HVAC Kalmarviken</h1>
+    <table id="table-parameters">
+        <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+            <th>Unit</th>
+        </tr>
+        <tr>
+            <td>External temperature</td>
+            <td id="temperature" class="warning">N/A</td>
+            <td>&deg;C</td>
+        </tr>
+        <tr>
+            <td>Internal temperature</td>
+            <td id="internal-temperature" class="warning">N/A</td>
+            <td>&deg;C</td>
+        </tr>
+        <tr>
+            <td>Wifi signal</td>
+            <td id="wifi-signal" class="warning">N/A</td>
+            <td>dBm</td>
+        </tr>
+        <tr>
+            <td>Last IR command</td>
+            <td id="last-command" class="warning" colspan="2">N/A</td>
+        </tr>
+    </table>
+    <div style="margin-top: 25px; ">
+        <h2>Commands</h2>
+        <button id="button-off">Turn off</button>
+        <button id="button-heat-22">Set temperature 22 &deg;C</button>
+        <button id="button-heat-10">Set temperature 10 &deg;C (iSave)</button>
+    </div>
+    <div id="notification"></div>
+    <script src="index.js"></script>
+</body>
+</html>
